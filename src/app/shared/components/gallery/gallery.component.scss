@@ -1,0 +1,47 @@
+@import 'imports/settings.imports';
+
+.c-gallery {
+  //display: flex;
+  //flex-wrap: wrap;
+  //align-items: center;
+  //justify-content: center;
+
+  &__item {
+    //display: flex;
+    //flex-direction: column;
+    //flex-basis: 25%;
+    //justify-content: center;
+    //align-items: center;
+
+  }
+  &__figure{
+    margin: 16px 0;
+    text-align: center;
+  }
+
+  &__img {
+    border: 3px solid $color-primary;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 1px 1px 19px;
+  }
+
+  &__figcaption{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    text-shadow: 0.2em 0.2em 0.4em black
+
+  }
+  &__text{
+    font-size: 36px;
+    font-family: Shlop-Regular;
+    color: $color-primary;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: table-cell;
+    text-transform: lowercase;
+  }
+}
