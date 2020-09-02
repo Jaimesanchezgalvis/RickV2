@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CharactersService } from '../../services/characters.service';
+import { FavoritesCharactersService } from '../../services/local/favorites-characters.service';
 
 @Component({
   selector: 'app-gallery',
@@ -11,10 +12,15 @@ export class GalleryComponent implements OnInit {
 
   @Input() characters;
 
-  constructor() { }
+  constructor(private favoritesCharactersService: FavoritesCharactersService ) { }
 
   ngOnInit(): void {
 
+  }
+
+  addNewFavoriteCharacter(character) {
+this.favoritesCharactersService.addNewFavoriteCharacter(character)
+console.log(this.favoritesCharactersService.getfavoritesCharacters());
   }
 
 }

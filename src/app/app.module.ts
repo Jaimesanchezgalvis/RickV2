@@ -6,9 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { CharacterSimplePageComponent } from './pages/character-simple-page/character-simple-page.component';
 import { LocationsSimplePageComponent } from './pages/locations-simple-page/locations-simple-page.component';
+import { FavoritesCharactersPagesComponent } from './pages/favorites-characters-pages/favorites-characters-pages.component';
 
 @NgModule({
-  declarations: [AppComponent, CharacterSimplePageComponent, LocationsSimplePageComponent],
+  declarations: [AppComponent, CharacterSimplePageComponent, LocationsSimplePageComponent, FavoritesCharactersPagesComponent ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent]
