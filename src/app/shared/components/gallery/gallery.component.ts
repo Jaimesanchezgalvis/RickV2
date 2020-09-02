@@ -20,7 +20,6 @@ export class GalleryComponent implements OnInit {
 
   addNewFavoriteCharacter(character) {
 this.favoritesCharactersService.addNewFavoriteCharacter(character)
-console.log(this.favoritesCharactersService.getfavoritesCharacters());
   }
 
 }

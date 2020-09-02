@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+
 export class FavoritesCharactersService {
 
  private favoritesCharacters = [];
@@ -14,7 +15,7 @@ addNewFavoriteCharacter(newFavoriteCharacter){
 this.favoritesCharacters.push(newFavoriteCharacter);
 }
 
-getFavoritesCharacters(){
+getFavoritesCharacters() {
 return this.favoritesCharacters;
 }
 }
